@@ -12,7 +12,7 @@ interface IPostData {
 const Post = ({ data }: { data: IPostData }) => {
   return (
     <div className="Post">
-      <img src={data.img} alt="" />
+      <img src={data.img} alt="" loading="lazy" />
 
       <div className="postReact">
         <img

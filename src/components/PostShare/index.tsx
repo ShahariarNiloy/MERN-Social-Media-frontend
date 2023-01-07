@@ -7,7 +7,7 @@ import { UilSchedule } from "@iconscout/react-unicons";
 import { UilTimes } from "@iconscout/react-unicons";
 
 const PostShare = () => {
-  const [image, setImage] = useState<{ image: string } | null>({
+  const [image, setImage] = useState<{ image: string }>({
     image: "",
   });
   const imageRef = useRef<HTMLInputElement>(null);
@@ -63,9 +63,9 @@ const PostShare = () => {
             />
           </div>
         </div>
-        {image && (
+        {image.image && (
           <div className="previewImage">
-            <UilTimes onClick={() => setImage(null)} />
+            <UilTimes onClick={() => setImage({ image: "" })} />
             <img src={image.image} alt="" />
           </div>
         )}

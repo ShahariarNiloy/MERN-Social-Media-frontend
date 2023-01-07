@@ -15,7 +15,7 @@ export const PostsData = [
 
     },
     {
-        img:'/images/postpic3.JPG',
+        img:'/images/postpic3.jpg',
         name: "Salena Gomez",
         desc: "At Archery Festival",
         likes: 800,

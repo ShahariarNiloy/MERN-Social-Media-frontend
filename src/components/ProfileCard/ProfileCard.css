@@ -22,10 +22,12 @@
 
 .ProfileImages > img:nth-of-type(2) {
   width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   position: absolute;
   bottom: -3rem;
   box-shadow: var(--profileShadow);
+  object-fit: contain;
 }
 
 .ProfileName {
